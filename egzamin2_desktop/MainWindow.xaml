@@ -8,11 +8,11 @@
         Title="Wzornik kolorów RGB, Wykonał: 89391831 " Height="450" Width="800" Background="Cornsilk">
 
     <Grid>
-        <Label HorizontalAlignment="Left" Height="78" Margin="92,37,0,0" VerticalAlignment="Top" Width="604" Background="White"/>
+        <Label x:Name="RGBlabel" HorizontalAlignment="Left" Height="78" Margin="92,37,0,0" VerticalAlignment="Top" Width="604" Background="White"/>
         <Label Content="Dobierz kolor suwakami i zapisz przyciskiem:" HorizontalAlignment="Left" Height="46" Margin="98,154,0,0" VerticalAlignment="Top" Width="546"/>
-        <Slider HorizontalAlignment="Left" Margin="116,199,0,0" VerticalAlignment="Top" Width="580" Maximum="255" Value="255"/>
-        <Slider HorizontalAlignment="Left" Margin="116,248,0,0" VerticalAlignment="Top" Width="580" Maximum="255" Value="255"/>
-        <Slider HorizontalAlignment="Left" Margin="116,299,0,0" VerticalAlignment="Top" Width="580" Maximum="255" Value="255"/>
+        <Slider x:Name="Rslider" ValueChanged="onSliderChange" HorizontalAlignment="Left" Margin="116,199,0,0" VerticalAlignment="Top" Width="580" Maximum="255" Value="255"/>
+        <Slider x:Name="Gslider" ValueChanged="onSliderChange" HorizontalAlignment="Left" Margin="116,248,0,0" VerticalAlignment="Top" Width="580" Maximum="255" Value="255"/>
+        <Slider x:Name="Bslider" ValueChanged="onSliderChange" HorizontalAlignment="Left" Margin="116,299,0,0" VerticalAlignment="Top" Width="580" Maximum="255" Value="255"/>
         <Label Content="R" HorizontalAlignment="Left" Height="31" Margin="67,199,0,0" VerticalAlignment="Top" Width="31"/>
         <Label Content="G" HorizontalAlignment="Left" Margin="70,248,0,0" VerticalAlignment="Top"/>
         <Label Content="B" HorizontalAlignment="Left" Margin="70,299,0,0" VerticalAlignment="Top"/>
