@@ -10,14 +10,17 @@
     <Grid>
         <Label x:Name="RGBlabel" HorizontalAlignment="Left" Height="78" Margin="92,37,0,0" VerticalAlignment="Top" Width="604" Background="White"/>
         <Label Content="Dobierz kolor suwakami i zapisz przyciskiem:" HorizontalAlignment="Left" Height="46" Margin="98,154,0,0" VerticalAlignment="Top" Width="546"/>
-        <Slider x:Name="Rslider" ValueChanged="onSliderChange" HorizontalAlignment="Left" Margin="116,199,0,0" VerticalAlignment="Top" Width="580" Maximum="255"/>
-        <Slider x:Name="Gslider" ValueChanged="onSliderChange" HorizontalAlignment="Left" Margin="116,248,0,0" VerticalAlignment="Top" Width="580" Maximum="255"/>
-        <Slider x:Name="Bslider" ValueChanged="onSliderChange" HorizontalAlignment="Left" Margin="116,299,0,0" VerticalAlignment="Top" Width="580" Maximum="255"/>
+        <Slider x:Name="Rslider" ValueChanged="onRSliderChange" HorizontalAlignment="Left" Margin="116,199,0,0" VerticalAlignment="Top" Width="580" Maximum="255"/>
+        <Slider x:Name="Gslider" ValueChanged="onGSliderChange" HorizontalAlignment="Left" Margin="116,248,0,0" VerticalAlignment="Top" Width="580" Maximum="255"/>
+        <Slider x:Name="Bslider" ValueChanged="onBSliderChange" HorizontalAlignment="Left" Margin="116,299,0,0" VerticalAlignment="Top" Width="580" Maximum="255"/>
         <Label Content="R" HorizontalAlignment="Left" Height="31" Margin="67,199,0,0" VerticalAlignment="Top" Width="31"/>
         <Label Content="G" HorizontalAlignment="Left" Margin="70,248,0,0" VerticalAlignment="Top"/>
         <Label Content="B" HorizontalAlignment="Left" Margin="70,299,0,0" VerticalAlignment="Top"/>
-        <Button Content="Pobierz" HorizontalAlignment="Left" Margin="346,325,0,0" VerticalAlignment="Top" Background="Peru"/>
-        <Label Content="" HorizontalAlignment="Left" Margin="327,375,0,0" VerticalAlignment="Top" Height="35" Width="79" Background="White"/>
+        <Button Content="Pobierz" Click="PobierzClick"  HorizontalAlignment="Left" Margin="346,325,0,0" VerticalAlignment="Top" Background="Peru"/>
+        <Label x:Name="Pobrane" Content="" HorizontalAlignment="Left" Margin="327,375,0,0" VerticalAlignment="Top" Height="35" Width="79" Background="White"/>
+        <Label x:Name="Rlabel" HorizontalAlignment="Left" Margin="731,200,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Glabel" HorizontalAlignment="Left" Margin="731,243,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Blabel" HorizontalAlignment="Left" Margin="731,294,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 
