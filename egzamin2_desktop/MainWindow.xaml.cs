@@ -19,19 +19,20 @@ namespace egzamin2_desktop
         public MainWindow()
         {
             InitializeComponent();
-           
+            this.Rslider.Value = 255;
+            this.Gslider.Value = 255;
+            this.Bslider.Value = 255;
         }
-
         private void onSliderChange(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             RGBBackgroundColorChange();
         }
         private void RGBBackgroundColorChange()
         {
-            byte Rslider = (byte)this.Rslider.Value;
-            byte Gslider = (byte)this.Gslider.Value;
-            byte Bslider = (byte)this.Bslider.Value;
-            RGBlabel.Background = new SolidColorBrush(Color.FromRgb(Rslider, Gslider, Bslider));
+            byte RsliderValue = (byte)this.Rslider.Value;
+            byte GsliderValue = (byte)this.Gslider.Value;
+            byte BsliderValue = (byte)this.Bslider.Value;
+            RGBlabel.Background = new SolidColorBrush(Color.FromRgb(RsliderValue, GsliderValue, BsliderValue));
         }
     }
 }
